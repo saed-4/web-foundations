@@ -1,0 +1,159 @@
+
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Page */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f4f6;
+  color: #1f2937;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #115e59;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+/* Main content */
+main {
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+/* Sections */
+section {
+  background-color: white;
+  padding: 25px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+  margin-bottom: 20px;
+  color: #115e59;
+}
+
+/* Form */
+#note-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input,
+select,
+button {
+  font: inherit;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+input,
+select {
+  border: 1px solid #d1d5db;
+  width: 100%;
+}
+
+input:focus,
+select:focus {
+  outline: 2px solid #5eead4;
+  border-color: #0f766e;
+}
+
+/* Buttons */
+button {
+  background-color: #0f766e;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #134e4a;
+}
+
+/* Error message */
+#error-message {
+  color: #dc2626;
+  margin-top: 10px;
+}
+
+/* Search and count */
+#search-input {
+  margin-bottom: 15px;
+}
+
+#note-count {
+  margin-bottom: 15px;
+  color: #4b5563;
+}
+
+/* Notes list */
+#notes-list {
+  list-style: none;
+}
+
+#notes-list li {
+  padding: 15px;
+  border: 1px solid #e5e7eb;
+  border-left: 5px solid #0f766e;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  overflow-wrap: anywhere;
+}
+
+/* Category colours */
+.category-personal {
+  border-left-color: #0d9488;
+}
+
+.category-work {
+  border-left-color: #991b1b;
+}
+
+.category-study {
+  border-left-color: #2563eb;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #6b7280;
+}
+
+/* Mobile layout */
+@media (max-width: 600px) {
+  main {
+    margin: 15px auto;
+    padding: 0 12px;
+  }
+
+  section {
+    padding: 18px;
+  }
+
+  #note-form {
+    flex-direction: column;
+  }
+
+  header h1 {
+    font-size: 1.7rem;
+  }
+}

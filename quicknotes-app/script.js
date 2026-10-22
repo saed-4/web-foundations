@@ -113,3 +113,4 @@ searchInput.addEventListener("input", render);
 
 // Display saved notes when the page opens
 render();
+ 

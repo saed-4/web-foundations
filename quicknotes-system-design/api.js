@@ -1,4 +1,4 @@
-
+ 
 const API_URL = "https://jsonplaceholder.typicode.com/posts";
 
 const loadBtn = document.getElementById("load-btn");

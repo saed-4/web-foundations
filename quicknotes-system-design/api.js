@@ -70,6 +70,7 @@ notes.forEach((note) => {
 }
 
 
+
 // GET: load 10 notes from the server.
 async function loadNotes() {
     loadBtn.disabled = true;

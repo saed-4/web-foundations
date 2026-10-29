@@ -69,6 +69,7 @@ notes.forEach((note) => {
 
 }
 
+
 // GET: load 10 notes from the server.
 async function loadNotes() {
     loadBtn.disabled = true;
@@ -151,6 +152,7 @@ noteForm.addEventListener("submit", async (event) => {
     }
 });
 
+// DELETE: remove a note from the server.
 async function deleteNote(id, deleteBtn) {
     deleteBtn.disabled = true;
     showStatus("Deleting note...");
